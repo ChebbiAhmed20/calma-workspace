@@ -4,11 +4,11 @@
 
 SQL schema: [`database/schema.sql`](database/schema.sql)
 
-![Relational Tables Diagram](docs/Pastel%20ER%20Diagram_%20Users%2C%20Reservations%2C%20Payments.png)
+![Relational Tables Diagram](docs/Diagramme%20ER%20avec%20cardinalit%C3%A9s%20actualis%C3%A9es.png)
 
 ### Tables
 - **`user`**: Core user accounts (name, email, password, phone, role).
-- **`client`**: Client profile linked to `user` (type, birth date).
+- **`client`**: Client profile linked to `user` (client type).
 - **`manager` / `tracking_agent` / `payment_agent`**: Role-specific tables linked to `user`.
 - **`salle`**: Available rooms (name, type, capacity).
 - **`reservation`**: Room bookings by clients (date, time slot, people count, billing mode, price, status).
